@@ -1,6 +1,4 @@
-const encrypt = (payload, secret) => {
-  // your code here and return token
-  const jwt = require('jsonwebtoken');
+const jwt = require('jsonwebtoken');
 
 const encrypt = (payload, secret, expiresIn = '1h') => {
   try {
@@ -19,8 +17,5 @@ const run = () => {
 };
 
 run();
-
-module.exports = encrypt;
-};
 
 module.exports = encrypt;
